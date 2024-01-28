@@ -1,0 +1,9 @@
+<!-- events.html -->
+<dl id="eventList">
+    {% for event in events %}
+        <dt>{{ event.id }}: {{ event.title }}</dt>
+        {% if event.description %}
+            <dd><em>{{ event.description }}</em></dd>
+        {% endif %}
+    {% endfor %}
+</dl>
